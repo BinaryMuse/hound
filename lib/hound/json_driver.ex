@@ -42,7 +42,11 @@ defmodule Hound.JsonDriver do
         cssSelectorsEnabled: true,
         browserName: browser_name,
         nativeEvents: false,
-        platform: "ANY"
+        platform: "ANY",
+        chromeOptions: [
+          excludeSwitches: ["--ignore-certificate-errors"],
+          args: ["--app=http://example.com"]
+        ]
       ]
     ]
 
