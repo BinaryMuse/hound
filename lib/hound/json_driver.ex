@@ -46,6 +46,10 @@ defmodule Hound.JsonDriver do
         chromeOptions: [
           excludeSwitches: ["--ignore-certificate-errors"],
           args: ["--app=http://example.com"]
+        ],
+        loggingPrefs: [
+          driver: "ALL",
+          browser: "ALL"
         ]
       ]
     ]
